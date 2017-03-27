@@ -1,0 +1,22 @@
+\begin{thebibliography}{1}
+
+\bibitem{chen2015xgboost}
+{\sc Chen, T., and He, T.}
+\newblock xgboost: extreme gradient boosting.
+\newblock {\em R package version 0.4-2\/} (2015).
+
+\bibitem{friedman2009elements}
+{\sc Friedman, J., Hastie, T., and Tibshirani, R.}
+\newblock {\em The Elements Of Statistical Learning, Data Mining Inference And
+  Prediction}, 2~ed.
+\newblock Springer, 2009.
+
+\bibitem{scikit-learn}
+{\sc Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B.,
+  Grisel, O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V.,
+  Vanderplas, J., Passos, A., Cournapeau, D., Brucher, M., Perrot, M., and
+  Duchesnay, E.}
+\newblock Scikit-learn: Machine learning in {P}ython.
+\newblock {\em Journal of Machine Learning Research 12\/} (2011), 2825--2830.
+
+\end{thebibliography}

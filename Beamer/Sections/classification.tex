@@ -1,0 +1,55 @@
+\section{Classification Pipeline}
+
+\subsection{Classification Methods}
+	
+\begin{frame}[t]{Classifiers and Software}
+	
+	\begin{alertblock}{Random Forests and Xgboost}
+		\begin{itemize}
+			\item High flexibility and ability to handle ``mixed'' data-types.
+			\item Typically work well out-of-the-box
+			\item Xgboost has proven extremely successful in past Kaggle
+				competitions. 
+			\item Quite easy to fine-tune. 
+		\end{itemize}
+	\end{alertblock}
+	\begin{block}{May the python be with you}
+		\begin{itemize}
+			\item Pandas
+			\item Scikit-Learn 
+			\item Xgboost
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\subsection{Model Validation}
+
+\begin{frame}[c]{Model Validation and Parameter Tuning}
+	\begin{itemize}
+		\item Extracted a stratified holdout set from the training set
+		\item Used early stopping to avoid overfitting in xgboost classifier
+		\item Evaluated several performance metrics on the holdout set
+		\item Tuned xgboost parameters using CV-based grid search
+		\item Bagged several xgboost classifiers to reduce variance
+	\end{itemize}
+\end{frame}
+
+\subsection{Results}
+
+\begin{frame}[c]{Project Milestones}
+	% TODO: use resizebox
+	\begin{table}[t]
+		\centering
+		\begin{tabular}{@{}lll@{}}
+		\toprule
+		Description                                      & Score   & Leaderboard \\ \midrule
+		Bagged xgboost classifier with no leak           & 0.91586 & 667         \\
+		Added animal status                              & 0.81768 & 454         \\
+		Added day, hour and minute information           & 0.69699 & 21          \\
+		Added outcome clusters                           & 0.64574 & 4           \\
+		Tuned xgboost parameters by grid search          & 0.62799 & 4           \\
+		Hierarchical xgboost \& random forest classifier & 0.62713 & 4           \\ \bottomrule
+		\end{tabular}
+	\end{table}
+
+\end{frame}

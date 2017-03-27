@@ -1,0 +1,75 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+
+\usepackage{Style/style}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+% The short title appears at the bottom of every slide, the full title is only on the title page
+\title[]{Animal Shelter Outcomes\\
+		 Data Mining Kaggle Competition} 
+
+\author[PoliKagglers]
+{%
+	\textbf{PoliKagglers}\\	
+	E. Bertino, A. Donizetti, P. Necchi, A. Negrini, M. Toschi
+}
+		 
+\institute[Polimi] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{%
+Politecnico di Milano%\\ % Your institution for the title page
+%\medskip
+%\textit{john@smith.com} % Your email address
+}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}[plain]
+     \begin{tikzpicture}[remember picture,overlay]
+         \node[at=(current page.center)] {
+             \includegraphics[width=\paperwidth]{Images/cover}
+         };
+     \end{tikzpicture}
+\end{frame}
+
+%------------------------------------------------------------------------------
+% Indice 
+%------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Plan} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+%------------------------------------------------------------------------------
+% Corpo della presentazione 
+%------------------------------------------------------------------------------
+
+\input{Sections/introduction.tex}
+\input{Sections/data_exploration.tex}
+\input{Sections/leak.tex}
+\input{Sections/feature_engineering.tex}
+\input{Sections/classification.tex}
+\input{Sections/conclusions.tex}
+
+%------------------------------------------------------------------------------
+% Appendice
+%------------------------------------------------------------------------------
+\appendix
+\backupbegin
+
+\begin{frame}
+\frametitle{\refname}
+\nocite{*}
+\bibliography{Bibliography/bibliography}
+\end{frame}
+
+\backupend
+
+\end{document}

@@ -1,0 +1,39 @@
+\section{Feature Engineering}
+
+\begin{frame}[t]{Features}	
+	\begin{table}[t]
+	\centering
+	\begin{tabular}{@{}lllll@{}}
+	\toprule
+	Original Variable & Type        & Variables obtained & Type        & Leak \\ \midrule
+	Name             & String      & Length of name     & Numerical   & No   \\
+	Date and time    & Datetime    & Year               & Numerical   & Yes  \\
+					 &             & Season             & Numerical   & No   \\
+					 &			   & Holidays			& Categorical & No \\
+					 &             & Month              & Numerical   & No   \\
+					 &             & Day of week        & Numerical   & No   \\
+					 &             & Day                & Numerical   & Yes  \\
+					 &             & Day of year        & Numerical   & Yes  \\
+					 &             & Hour               & Numerical   & Yes  \\
+					 &             & Minute             & Numerical   & Yes  \\
+					 &             & Minute of day      & Numerical   & Yes  \\
+					 &             & Outcomes clusters  & Numerical   & Yes  \\
+	Animal type      & Categorical & Animal Type        & Categorical & No   \\
+	Sex upon outcome & Categorical & Gender             & Categorical & No   \\
+					 &             & Status             & Categorical & Yes  \\
+	Age upon outcome & Ordinal     & Age in days        & Numerical   & No   \\
+			&	   & GroupAges		& Categorical & No\\
+	Breed            & Categorical & Breed Groups       & Categorical & No   \\
+					 &             & Mix and multibreed & Categorical & No   \\
+					 &             & Dangerous          & Categorical & No   \\
+	Color            & Categorical & Number of colors   & Numerical   & No   \\
+					 &             & Color groups       & Categorical & No   \\
+					 &             & Pattern            & Categorical & No   \\ \bottomrule
+	\end{tabular}
+	\end{table}
+\end{frame}
+
+\begin{frame}[t]{Outcomes Temporal Clustering}
+	TODO: diagramma?
+\end{frame}
+

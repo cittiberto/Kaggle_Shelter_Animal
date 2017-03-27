@@ -1,0 +1,11 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Data Exploration}{4}{0}{2}
+\beamer@sectionintoc {3}{Dealing With Leaks}{6}{0}{3}
+\beamer@sectionintoc {4}{Feature Engineering}{7}{0}{4}
+\beamer@sectionintoc {5}{Classification Pipeline}{9}{0}{5}
+\beamer@subsectionintoc {5}{2}{Classification Methods}{9}{0}{5}
+\beamer@subsectionintoc {5}{3}{Model Validation}{10}{0}{5}
+\beamer@subsectionintoc {5}{4}{Results}{11}{0}{5}
+\beamer@sectionintoc {6}{Conclusions}{12}{0}{6}
